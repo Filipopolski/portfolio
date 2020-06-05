@@ -1,22 +1,44 @@
 <template>
-  <div>
-    <main id="main">
+  <div id="main">
+
       <about-section></about-section>
       <facts-section></facts-section>
       <skills-section></skills-section>
       <resume-section></resume-section>
       <portfolio-section></portfolio-section>
-      <servicies-section></servicies-section>
+      <services-section></services-section>
       <testimonials-section></testimonials-section>
       <contact-section></contact-section>
-    </main>
+
   </div>
 </template>
 
 <script>
-    export default {
-        name: "Main"
-    }
+
+  import AboutSection from "./AboutSection";
+  import FactsSection from "./FactsSection";
+  import SkillsSection from "./SkillsSection";
+  import ResumeSection from "./ResumeSection";
+  import PortfolioSection from "./PortfolioSection";
+  import ServicesSection from "./ServicesSection";
+  import TestimonialsSection from "./TestimonialsSection";
+  import ContactSection from "./ContactSection";
+
+  export default {
+      name: "Main",
+      components:
+          {
+              AboutSection: AboutSection,
+              factsSection: FactsSection,
+              skillsSection: SkillsSection,
+              resumeSection: ResumeSection,
+              portfolioSection: PortfolioSection,
+              servicesSection: ServicesSection,
+              testimonialsSection: TestimonialsSection,
+              contactSection: ContactSection
+          }
+  }
+
 </script>
 
 <style scoped>

@@ -5,7 +5,7 @@
       <div class="section-title">
         <h2>
           Portfolio
-          ::after
+<!--          ::after-->
         </h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
           consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
@@ -28,18 +28,18 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
           <div class="portfolio-wrap">
-            ::before
+<!--            ::before-->
             <img src="../assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
               <a href="../assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
                  title="App 1">
                 <i class="bx bx-plus">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
               <a href="portfolio-details.html" title="More Details">
                 <i class="bx bx-link">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
             </div>
@@ -48,18 +48,18 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="position: absolute; left: 0px; top: 412.5px;">
           <div class="portfolio-wrap">
-            ::before
+<!--            ::before-->
             <img src="../assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
               <a href="../assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
                  title="Web 3">
                 <i class="bx bx-plus">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
               <a href="portfolio-details.html" title="More Details">
                 <i class="bx bx-link">
-                  ::before
+<!--                  ::before-->
                 </i></a>
             </div>
           </div>
@@ -67,18 +67,18 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 825px;">
           <div class="portfolio-wrap">
-            ::before
+<!--            ::before-->
             <img src="../assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
               <a href="../assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
                  title="App 2">
                 <i class="bx bx-plus">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
               <a href="portfolio-details.html" title="More Details">
                 <i class="bx bx-link">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
             </div>
@@ -87,17 +87,17 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card" style="position: absolute; left: 0px; top: 1237.5px;">
           <div class="portfolio-wrap">
-            ::before
+<!--            ::before-->
             <img src="../assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
               <a href="../assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
                  title="Card 2">
                 <i class="bx bx-plus">
-                  ::before
+<!--                  ::before-->
                 </i></a>
               <a href="portfolio-details.html" title="More Details">
                 <i class="bx bx-link">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
             </div>
@@ -106,18 +106,18 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="position: absolute; left: 0px; top: 1650px;">
           <div class="portfolio-wrap">
-            ::before
+<!--            ::before-->
             <img src="../assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
               <a href="../assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
                  title="Web 2">
                 <i class="bx bx-plus">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
               <a href="portfolio-details.html" title="More Details">
                 <i class="bx bx-link">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
             </div>
@@ -126,18 +126,18 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 2062.5px;">
           <div class="portfolio-wrap">
-            ::before
+<!--            ::before-->
             <img src="../assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
               <a href="../assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
                  title="App 3">
                 <i class="bx bx-plus">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
               <a href="portfolio-details.html" title="More Details">
                 <i class="bx bx-link">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
             </div>
@@ -146,18 +146,18 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card" style="position: absolute; left: 0px; top: 2475px;">
           <div class="portfolio-wrap">
-            ::before
+<!--            ::before-->
             <img src="../assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
               <a href="../assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
                  title="Card 1">
                 <i class="bx bx-plus">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
               <a href="portfolio-details.html" title="More Details">
                 <i class="bx bx-link">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
             </div>
@@ -166,18 +166,18 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card" style="position: absolute; left: 0px; top: 2887.5px;">
           <div class="portfolio-wrap">
-            ::before
+<!--            ::before-->
             <img src="../assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
               <a href="../assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
                  title="Card 3">
                 <i class="bx bx-plus">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
               <a href="portfolio-details.html" title="More Details">
                 <i class="bx bx-link">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
             </div>
@@ -186,18 +186,18 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="position: absolute; left: 0px; top: 3300px;">
           <div class="portfolio-wrap">
-            ::before
+<!--            ::before-->
             <img src="../assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
               <a href="../assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
                  title="Web 3">
                 <i class="bx bx-plus">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
               <a href="portfolio-details.html" title="More Details">
                 <i class="bx bx-link">
-                  ::before
+<!--                  ::before-->
                 </i>
               </a>
             </div>
@@ -212,7 +212,7 @@
 
 <script>
     export default {
-        name: "portfolio-section"
+        name: "PortfolioSection"
     }
 </script>
 

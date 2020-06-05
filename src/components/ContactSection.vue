@@ -5,7 +5,7 @@
       <div class="section-title">
         <h2>
           Contact
-          ::after
+<!--          ::after-->
         </h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
           consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
@@ -18,7 +18,7 @@
           <div class="info">
             <div class="address">
               <i class="icofont-google-map">
-                ::before
+<!--                ::before-->
               </i>
               <h4>Location:</h4>
               <p>A108 Adam Street, New York, NY 535022</p>
@@ -26,7 +26,7 @@
 
             <div class="email">
               <i class="icofont-envelope">
-                ::before
+<!--                ::before-->
               </i>
               <h4>Email:</h4>
               <p>info@example.com</p>
@@ -34,7 +34,7 @@
 
             <div class="phone">
               <i class="icofont-phone">
-                ::before
+<!--                ::before-->
               </i>
               <h4>Call:</h4>
               <p>+1 5589 55488 55s</p>
@@ -94,7 +94,7 @@
 
 <script>
     export default {
-        name: "contact-section"
+        name: "contactSection"
     }
 </script>
 

@@ -5,7 +5,7 @@
       <div class="section-title">
         <h2>
           Skills
-          ::after
+          <!--          ::after-->
         </h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
           consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
@@ -17,7 +17,7 @@
         <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
 
           <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
+            <span class="skill">HTML<i class="val">100%</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
                    style="width: 100%;"></div>
@@ -78,7 +78,7 @@
 
 <script>
     export default {
-        name: "skills-section"
+        name: "SkillsSection"
     }
 </script>
 

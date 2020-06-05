@@ -1,6 +1,6 @@
 <template>
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    ::before
+<!--    ::before-->
     <div class="hero-container aos-init aos-animate" data-aos="fade-in">
       <h1>Alex Smith</h1>
       <p>
@@ -14,7 +14,7 @@
 
 <script>
     export default {
-        name: "Hero-section"
+        name: "HeroSection"
     }
 </script>
 
@@ -23,7 +23,7 @@
   #hero {
     width: 100%;
     height: 100vh;
-    /*background: url("../img/hero-bg.jpg") top center;*/
+    background: url("../assets/img/hero-bg.jpg") top center;
     background-size: cover;
   }
 
@@ -82,6 +82,26 @@
       line-height: 24px;
       margin-bottom: 30px;
     }
+  }
+
+  .typed-cursor{
+    opacity: 1;
+  }
+
+  .typed-cursor.typed-cursor--blink{
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+  }
+
+  @keyframes typedjsBlink{
+    50% { opacity: 0.0; }
+  }
+
+  @-webkit-keyframes typedjsBlink{
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
   }
 
 </style>

@@ -5,7 +5,7 @@
       <div class="section-title">
         <h2>
           Resume
-          ::after
+          <!--          ::after-->
         </h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
           consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
@@ -16,7 +16,7 @@
         <div class="col-lg-6 aos-init" data-aos="fade-up">
           <h3 class="resume-title">Sumary</h3>
           <div class="resume-item pb-0">
-            ::before
+            <!--            ::before-->
             <h4>Alex Smith</h4>
             <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing
               user-centered digital/print marketing material from initial concept to final, polished deliverable.</em>
@@ -30,7 +30,7 @@
 
           <h3 class="resume-title">Education</h3>
           <div class="resume-item">
-            ::before
+            <!--            ::before-->
             <h4>Master of Fine Arts &amp; Graphic Design</h4>
             <h5>2015 - 2016</h5>
             <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
@@ -38,7 +38,7 @@
               ut dignissimos deleniti nerada porti sand markend</p>
           </div>
           <div class="resume-item">
-            ::before
+            <!--            ::before-->
             <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
             <h5>2010 - 2014</h5>
             <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
@@ -50,7 +50,7 @@
         <div class="col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="100">
           <h3 class="resume-title">Professional Experience</h3>
           <div class="resume-item">
-            ::before
+            <!--            ::before-->
             <h4>Senior graphic design specialist</h4>
             <h5>2019 - Present</h5>
             <p><em>Experion, New York, NY </em></p>
@@ -68,7 +68,7 @@
             </ul>
           </div>
           <div class="resume-item">
-            ::before
+            <!--            ::before-->
             <h4>Graphic design specialist</h4>
             <h5>2017 - 2018</h5>
             <p><em>Stepping Stone Advertising, New York, NY</em></p>
@@ -90,7 +90,7 @@
 
 <script>
     export default {
-        name: "resume-section"
+        name: "ResumeSection"
     }
 </script>
 

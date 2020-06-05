@@ -5,7 +5,7 @@
       <div class="section-title">
         <h2>
           Services
-          ::after
+          <!--          ::after-->
         </h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
           consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
@@ -16,7 +16,7 @@
         <div class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up">
           <div class="icon">
             <i class="icofont-computer">
-              ::before
+              <!--              ::before-->
             </i>
           </div>
           <h4 class="title"><a href="">Lorem Ipsum</a></h4>
@@ -26,7 +26,7 @@
         <div class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up" data-aos-delay="100">
           <div class="icon">
             <i class="icofont-chart-bar-graph">
-              ::before
+              <!--              ::before-->
             </i>
           </div>
           <h4 class="title"><a href="">Dolor Sitema</a></h4>
@@ -36,7 +36,7 @@
         <div class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up" data-aos-delay="200">
           <div class="icon">
             <i class="icofont-earth">
-              ::before
+              <!--              ::before-->
             </i>
           </div>
           <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
@@ -46,7 +46,7 @@
         <div class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up" data-aos-delay="300">
           <div class="icon">
             <i class="icofont-image">
-              ::before
+              <!--              ::before-->
             </i>
           </div>
           <h4 class="title"><a href="">Magni Dolores</a></h4>
@@ -56,7 +56,7 @@
         <div class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up" data-aos-delay="400">
           <div class="icon">
             <i class="icofont-settings">
-              ::before
+              <!--              ::before-->
             </i>
           </div>
           <h4 class="title"><a href="">Nemo Enim</a></h4>
@@ -66,7 +66,7 @@
         <div class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up" data-aos-delay="500">
           <div class="icon">
             <i class="icofont-tasks-alt">
-              ::before
+              <!--              ::before-->
             </i>
           </div>
           <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
@@ -81,7 +81,7 @@
 
 <script>
     export default {
-        name: "services-section"
+        name: "ServicesSection"
     }
 </script>
 

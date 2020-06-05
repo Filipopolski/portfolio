@@ -1,7 +1,7 @@
 <template>
   <a href="#" class="back-to-top" style="display: none;">
     <i class="icofont-simple-up">
-      ::before
+<!--      ::before-->
     </i>
   </a>
 </template>

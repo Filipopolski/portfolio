@@ -4,7 +4,7 @@
       <div class="section-title">
         <h2>
           About
-          ::after
+<!--          ::after-->
         </h2>
         <p>
           Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
@@ -28,28 +28,28 @@
               <ul>
                 <li>
                   <i class="icofont-rounded-right">
-                    ::before
+<!--                    ::before-->
                   </i>
                   <strong>Birthday:</strong>
                   1 May 1995
                 </li>
                 <li>
                   <i class="icofont-rounded-right">
-                    ::before
+<!--                    ::before-->
                   </i>
                   <strong>Website:</strong>
                   www.example.com
                 </li>
                 <li>
                   <i class="icofont-rounded-right">
-                    ::before
+<!--                    ::before-->
                   </i>
                   <strong>Phone:</strong>
                   +123 456 7890
                 </li>
                 <li>
                   <i class="icofont-rounded-right">
-                    ::before
+<!--                    ::before-->
                   </i> <strong>City:</strong>
                   City : New York, USA
                 </li>
@@ -59,28 +59,28 @@
               <ul>
                 <li>
                   <i class="icofont-rounded-right">
-                    ::before
+<!--                    ::before-->
                   </i>
                   <strong>Age:</strong>
                   30
                 </li>
                 <li>
                   <i class="icofont-rounded-right">
-                    ::before
+<!--                    ::before-->
                   </i>
                   <strong>Degree:</strong>
                   Master
                 </li>
                 <li>
                   <i class="icofont-rounded-right">
-                    ::before
+<!--                    ::before-->
                   </i>
                   <strong>PhEmailone:</strong>
                   email@example.com
                 </li>
                 <li>
                   <i class="icofont-rounded-right">
-                    ::before
+<!--                    ::before-->
                   </i>
                   <strong>Freelance:</strong>
                   Available
@@ -102,7 +102,7 @@
 
 <script>
     export default {
-        name: "about-section"
+        name: "AboutSection"
     }
 </script>
 

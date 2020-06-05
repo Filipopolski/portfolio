@@ -8,27 +8,27 @@
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter">
             <i class="bx bxl-twitter">
-              ::before
+<!--              ::before-->
             </i>
           </a>
           <a href="#" class="facebook">
             <i class="bx bxl-facebook">
-              ::before
+<!--              ::before-->
             </i>
           </a>
           <a href="#" class="instagram">
             <i class="bx bxl-instagram">
-              ::before
+<!--              ::before-->
             </i>
           </a>
           <a href="#" class="google-plus">
             <i class="bx bxl-skype">
-              ::before
+<!--              ::before-->
             </i>
           </a>
           <a href="#" class="linkedin">
             <i class="bx bxl-linkedin">
-              ::before
+<!--              ::before-->
             </i>
           </a>
         </div>
@@ -39,7 +39,7 @@
           <li class="active">
             <a href="../../index.html">
               <i class="bx bx-home">
-                ::before
+<!--                ::before-->
               </i>
               <span>Home</span>
             </a>
@@ -47,7 +47,7 @@
           <li>
             <a href="#about">
             <i class="bx bx-user">
-              ::before
+<!--              ::before-->
             </i>
             <span>About</span>
           </a>
@@ -55,7 +55,7 @@
           <li>
             <a href="#resume">
               <i class="bx bx-file-blank">
-                ::before
+<!--                ::before-->
               </i>
               <span>Resume</span>
             </a>
@@ -63,25 +63,25 @@
           <li>
             <a href="#portfolio">
               <i class="bx bx-book-content">
-                ::before
+<!--                ::before-->
               </i>
-              " Portfolio"
+              Portfolio
             </a>
           </li>
           <li>
             <a href="#services">
               <i class="bx bx-server">
-                ::before
+<!--                ::before-->
               </i>
-              " Services"
+              Services
             </a>
           </li>
           <li>
             <a href="#contact">
               <i class="bx bx-envelope">
-                ::before
+<!--                ::before-->
               </i>
-              " Contact"
+              Contact
             </a>
           </li>
         </ul>
@@ -90,7 +90,7 @@
       <!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none">
         <i class="icofont-navigation-menu">
-          ::before
+<!--          ::before-->
         </i>
       </button>
     </div>
@@ -100,11 +100,12 @@
 
 <script>
     export default {
-        name: "my-header"
+        name: "Header"
     }
 </script>
 
 <style scoped>
+
   #header {
     position: fixed;
     top: 0;

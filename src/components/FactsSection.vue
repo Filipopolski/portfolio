@@ -5,7 +5,7 @@
       <div class="section-title">
         <h2>
           Facts
-          ::after
+<!--          ::after-->
         </h2>
         <p>
           Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
@@ -19,7 +19,7 @@
         <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch aos-init aos-animate" data-aos="fade-up">
           <div class="count-box">
             <i class="icofont-simple-smile">
-              ::before
+<!--              ::before-->
             </i>
             <span data-toggle="counter-up">232</span>
             <p><strong>Happy Clients</strong> consequuntur quae</p>
@@ -30,7 +30,7 @@
              data-aos-delay="100">
           <div class="count-box">
             <i class="icofont-document-folder">
-              ::before
+<!--              ::before-->
             </i>
             <span data-toggle="counter-up">521</span>
             <p><strong>Projects</strong> adipisci atque cum quia aut</p>
@@ -41,7 +41,7 @@
              data-aos-delay="200">
           <div class="count-box">
             <i class="icofont-live-support">
-              ::before
+<!--              ::before-->
             </i>
             <span data-toggle="counter-up">1,463</span>
             <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
@@ -52,7 +52,7 @@
              data-aos-delay="300">
           <div class="count-box">
             <i class="icofont-users-alt-5">
-              ::before
+<!--              ::before-->
             </i>
             <span data-toggle="counter-up">15</span>
             <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
@@ -67,7 +67,7 @@
 
 <script>
     export default {
-        name: "facts-section"
+        name: "FactsSection"
     }
 </script>
 

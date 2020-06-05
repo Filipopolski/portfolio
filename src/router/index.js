@@ -18,10 +18,10 @@ import BackToTop from "../components/BackToTop";
 Vue.use(Router);
 
 export default new Router({
-  mode:'history',
+  mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '',
       name: 'Mobile nav toggle button',
       component: MobileNav
     },
@@ -36,59 +36,57 @@ export default new Router({
       component: HeroSection
     },
     {
-      path: '/',
+      path: '',
       name: 'Main',
       component: Main,
-      children: [
-        {
-          path: '/',
-          name: 'About Section',
-          component: AboutSection
-        },
-        {
-          path: '/',
-          name: 'Fact Section',
-          component: FactsSection
-        },
-        {
-          path: '/',
-          name: 'Skills Section',
-          component: SkillsSection
-        },
-        {
-          path: '/',
-          name: 'Resume Section',
-          component: ResumeSection
-        },
-        {
-          path: '/',
-          name: 'Portfolio Section',
-          component: PortfolioSection
-        },
-        {
-          path: '/',
-          name: 'Services Section',
-          component: ServicesSection
-        },
-        {
-          path: '/',
-          name: 'Testimonials Section',
-          component: TestimonialsSection
-        },
-        {
-          path: '/',
-          name: 'Contact Section',
-          component: ContactSection
-        },
-      ]
+    },
+    {
+      path: '',
+      name: 'aboutSection',
+      component: AboutSection
     },
     {
       path: '/',
+      name: 'Fact Section',
+      component: FactsSection
+    },
+    {
+      path: '/',
+      name: 'Skills Section',
+      component: SkillsSection
+    },
+    {
+      path: '/',
+      name: 'Resume Section',
+      component: ResumeSection
+    },
+    {
+      path: '/',
+      name: 'Portfolio Section',
+      component: PortfolioSection
+    },
+    {
+      path: '/',
+      name: 'Services Section',
+      component: ServicesSection
+    },
+    {
+      path: '/',
+      name: 'Testimonials Section',
+      component: TestimonialsSection
+    },
+    {
+      path: '/',
+      name: 'Contact Section',
+      component: ContactSection
+    },
+    {
+      path: '',
       name: 'Footer',
       component: Footer
     },
     {
-      path: '/',
+      path: '',
       name: 'Back to top button',
       component: BackToTop
     }
