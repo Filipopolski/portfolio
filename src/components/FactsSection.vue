@@ -66,9 +66,11 @@
 </template>
 
 <script>
+
     export default {
         name: "FactsSection"
     }
+
 </script>
 
 <style scoped>

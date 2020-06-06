@@ -211,8 +211,18 @@
 </template>
 
 <script>
+
+    import isotope from 'vueisotope'
+    // import $ from 'jquery';
+
     export default {
-        name: "PortfolioSection"
+        name: "PortfolioSection",
+            components: {
+                isotope,
+            },
+        // mounted () {
+        //     $('.venobox').venobox();
+        // }
     }
 </script>
 

@@ -4,31 +4,11 @@
     <div class="d-flex flex-column">
       <div class="profile">
         <img src="../assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="../../index.html">Alex Smith</a></h1>
+        <h1 class="text-light"><a href="../../index.html">{{title}}</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter">
-            <i class="bx bxl-twitter">
-<!--              ::before-->
-            </i>
-          </a>
-          <a href="#" class="facebook">
-            <i class="bx bxl-facebook">
-<!--              ::before-->
-            </i>
-          </a>
-          <a href="#" class="instagram">
-            <i class="bx bxl-instagram">
-<!--              ::before-->
-            </i>
-          </a>
-          <a href="#" class="google-plus">
-            <i class="bx bxl-skype">
-<!--              ::before-->
-            </i>
-          </a>
-          <a href="#" class="linkedin">
-            <i class="bx bxl-linkedin">
-<!--              ::before-->
+          <a  v-for="social in socials" href="#" class= "{ social.a }">
+            <i class="bx bxl-{ social.icon }">
+              <!--              ::before-->
             </i>
           </a>
         </div>
@@ -36,61 +16,22 @@
 
       <nav class="nav-menu">
         <ul>
-          <li class="active">
-            <a href="../../index.html">
-              <i class="bx bx-home">
-<!--                ::before-->
+          <li v-for="item in items">
+         <a href="{item.way}">
+              <i class="bx bx-{item.icon}">
+                <!--                ::before-->
               </i>
-              <span>Home</span>
+              <span>{{item.text}}</span>
             </a>
           </li>
-          <li>
-            <a href="#about">
-            <i class="bx bx-user">
-<!--              ::before-->
-            </i>
-            <span>About</span>
-          </a>
-          </li>
-          <li>
-            <a href="#resume">
-              <i class="bx bx-file-blank">
-<!--                ::before-->
-              </i>
-              <span>Resume</span>
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio">
-              <i class="bx bx-book-content">
-<!--                ::before-->
-              </i>
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a href="#services">
-              <i class="bx bx-server">
-<!--                ::before-->
-              </i>
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              <i class="bx bx-envelope">
-<!--                ::before-->
-              </i>
-              Contact
-            </a>
-          </li>
+
         </ul>
       </nav>
 
       <!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none">
         <i class="icofont-navigation-menu">
-<!--          ::before-->
+          <!--          ::before-->
         </i>
       </button>
     </div>
@@ -98,10 +39,33 @@
 
 </template>
 
+
 <script>
+  
     export default {
-        name: "Header"
+        name: "Header",
+        data() {
+            return {
+                title: 'Alex Smith',
+                socials: [
+                    {a: 'twitter', icon: 'twitter'},
+                    {a: 'facebook', icon: 'facebook'},
+                    {a: 'instagram', icon: 'instagram'},
+                    {a: 'google-plus', icon: 'skype'},
+                    {a: 'linkedin', icon: 'linkedin'}
+                ],
+                items: [
+                    {way: '../../index.html', icon: 'home', text: 'Home'},
+                    {way: '#about', icon: 'user', text: 'About'},
+                    {way: '#resume', icon: 'file-blank', text: 'Resume'},
+                    {way: '#portfolio', icon: 'book-content', text: 'Portfolio'},
+                    {way: '#services', icon: 'server', text: 'Services'},
+                    {way: '#contact', icon: 'envelope', text: 'Contact'}
+                ]
+            }
+        }
     }
+
 </script>
 
 <style scoped>

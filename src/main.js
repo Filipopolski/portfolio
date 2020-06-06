@@ -9,21 +9,11 @@ import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueIconFont from 'vue-icon-font'
-import carousel from 'vue-owl-carousel'
 import VueForm from 'vue-form'
 import VueTypedJs from 'vue-typed-js'
-import $ from 'jquery'
+import 'boxicons';
 import VueWaypoint from 'vue-waypoint'
 
-export default {
-  mounted () {
-    $('.venobox').venobox();
-  }
-}
-
-// import vue-jquery from 'vue-jquery';
-
-// import 'jquery-ui';
 
 /* font-class */
 // import '@/assets/iconfont/iconfont.css'
@@ -39,10 +29,9 @@ Vue.use(VueIconFont);
 Vue.use(VueForm);
 Vue.use(VueTypedJs);
 Vue.use(VueWaypoint);
-Vue.use(carousel);
+Vue.use(require('vue-countup'));
 
 
-// Vue.use(vue-jquery);
 
 /* eslint-disable no-new */
 new Vue({
@@ -66,6 +55,3 @@ new Vue({
 });
 
 
-// export default {
-//   components: { carousel },
-// }
