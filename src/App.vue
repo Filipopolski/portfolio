@@ -15,12 +15,12 @@
 
 <script>
 
-    import MobileNav from "./components/MobileNav";
-    import Header from "./components/Header";
-    import HeroSection from "./components/HeroSection";
-    import Main from "./components/Main";
-    import Footer from "./components/Footer";
-    import BackToTop from "./components/BackToTop";
+    import MobileNav from "./components/main/MobileNav";
+    import Header from "./components/main/Header";
+    import HeroSection from "./components/main/HeroSection";
+    import Main from "./components/main/Main";
+    import Footer from "./components/main/Footer";
+    import BackToTop from "./components/main/BackToTop";
 
     export default {
         components: {

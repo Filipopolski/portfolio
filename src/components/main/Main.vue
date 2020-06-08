@@ -1,4 +1,5 @@
 <template>
+
   <div id="main">
 
       <about-section></about-section>
@@ -11,6 +12,7 @@
       <contact-section></contact-section>
 
   </div>
+
 </template>
 
 <script>
@@ -28,7 +30,7 @@
       name: "Main",
       components:
           {
-              AboutSection: AboutSection,
+              aboutSection: AboutSection,
               factsSection: FactsSection,
               skillsSection: SkillsSection,
               resumeSection: ResumeSection,
@@ -82,6 +84,12 @@
 
   .section-title p {
     margin-bottom: 0;
+  }
+
+  @media (max-width: 1199px) {
+    #main {
+      margin-left: 0;
+    }
   }
 
 </style>

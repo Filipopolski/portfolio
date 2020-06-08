@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import Portfolio from "./Portfolio"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm'
@@ -42,11 +43,26 @@ new Vue({
 });
 
 new Vue({
+  el: '#portfolio',
+  router,
+  components: { Portfolio },
+  template: '<Portfolio/>'
+});
+
+new Vue({
   el: '#app',
   created () {
     AOS.init()
   },
   render: h => h(App)
+});
+
+new Vue({
+  el: '#portfolio',
+  created () {
+    AOS.init()
+  },
+  render: h => h(Portfolio)
 });
 
 new Vue({

@@ -1,7 +1,7 @@
 <template>
-  <button type="button" class="mobile-nav-toggle d-xl-none">
-    <i class="icofont-navigation-menu"><!--:before--></i>
-  </button>
+
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"><!--:before--></i></button>
+
 </template>
 
 <script>

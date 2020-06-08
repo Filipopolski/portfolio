@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <div class="row portfolio-container aos-init" data-aos="fade-up" data-aos-delay="100" style="position: relative; height: 3712.5px;">
+      <div class="row portfolio-container aos-init" data-aos="fade-up" data-aos-delay="100" style="position: relative; height: 877.5px;">
 
         <div v-for="item in portfolioItems" :class=" item.class " :style=" item.style ">
           <div class="portfolio-wrap"><!--::before--><img :src=" item.src " class="img-fluid" alt="">
@@ -50,15 +50,15 @@
                   {data: '.filter-web',name: 'Web'},
               ],
               portfolioItems: [
-                  {class: 'col-lg-4 col-md-6 portfolio-item filter-app', style: 'position: absolute; left: 0px; top: 0px', src: '../../static/img/portfolio/portfolio-1.jpg', title: 'App 1'},
-                  {class: 'col-lg-4 col-md-6 portfolio-item filter-web', style: 'position: absolute; left: 0px; top: 412.5px', src: '../../static/img/portfolio/portfolio-2.jpg', title: 'Web 3'},
-                  {class: 'col-lg-4 col-md-6 portfolio-item filter-app', style: 'position: absolute; left: 0px; top: 825px', src: '../../static/img/portfolio/portfolio-3.jpg', title: 'App 2'},
-                  {class: 'col-lg-4 col-md-6 portfolio-item filter-card', style: 'position: absolute; left: 0px; top: 1237.5px', src: '../../static/img/portfolio/portfolio-4.jpg', title: 'Card 2'},
-                  {class: 'col-lg-4 col-md-6 portfolio-item filter-web', style: 'position: absolute; left: 0px; top: 1650px', src: '../../static/img/portfolio/portfolio-5.jpg', title: 'Web 2'},
-                  {class: 'col-lg-4 col-md-6 portfolio-item filter-app', style: 'position: absolute; left: 0px; top: 2062.5px', src: '../../static/img/portfolio/portfolio-6.jpg', title: 'App 3'},
-                  {class: 'col-lg-4 col-md-6 portfolio-item filter-card', style: 'position: absolute; left: 0px; top: 2475px', src: '../../static/img/portfolio/portfolio-7.jpg', title: 'Card 1'},
-                  {class: 'col-lg-4 col-md-6 portfolio-item filter-card', style: 'position: absolute; left: 0px; top: 2887.5px', src: '../../static/img/portfolio/portfolio-8.jpg', title: 'Card 3'},
-                  {class: 'col-lg-4 col-md-6 portfolio-item filter-web', style: 'position: absolute; left: 0px; top: 3300px', src: '../../static/img/portfolio/portfolio-9.jpg', title: 'Web 3'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-app', style: 'position: absolute; left: 0px; top: 0px', src: '../static/img/portfolio/portfolio-1.jpg', title: 'App 1'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-web', style: 'position: absolute; left: 380px; top: 0px', src: '../static/img/portfolio/portfolio-2.jpg', title: 'Web 3'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-app', style: 'position: absolute; left: 760px; top: 0px', src: '../static/img/portfolio/portfolio-3.jpg', title: 'App 2'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-card', style: 'position: absolute; left: 0px; top: 292.5px', src: '../static/img/portfolio/portfolio-4.jpg', title: 'Card 2'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-web', style: 'position: absolute; left: 380px; top: 292.5px', src: '../static/img/portfolio/portfolio-5.jpg', title: 'Web 2'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-app', style: 'position: absolute; left: 760px; top: 292.5px', src: '../static/img/portfolio/portfolio-6.jpg', title: 'App 3'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-card', style: 'position: absolute; left: 0px; top: 585px', src: '../static/img/portfolio/portfolio-7.jpg', title: 'Card 1'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-card', style: 'position: absolute; left: 380px; top: 585px', src: '../static/img/portfolio/portfolio-8.jpg', title: 'Card 3'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-web', style: 'position: absolute; left: 760px; top: 585px', src: '../static/img/portfolio/portfolio-9.jpg', title: 'Web 3'},
               ],
           }
         },

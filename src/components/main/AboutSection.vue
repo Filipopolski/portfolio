@@ -31,7 +31,7 @@
         data() {
             return {
                 title: 'About',
-                image: '../../static/img/profile-img.jpg',
+                image: '../static/img/profile-img.jpg',
                 textOne: 'Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.',
                 textTwo: 'UI/UX Designer & Web Developer.',
                 textThree: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',

@@ -28,7 +28,7 @@
   #hero {
     width: 100%;
     height: 100vh;
-    background: url("../../static/img/hero-bg.jpg") top center;
+    background: url("../../../static/img/hero-bg.jpg") top center;
     background-size: cover;
   }
 
@@ -89,7 +89,7 @@
     }
   }
 
-  .vue-typed-cursor{
+  .typed-cursor{
     opacity: 1;
   }
 

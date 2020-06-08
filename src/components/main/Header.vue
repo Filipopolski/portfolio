@@ -11,10 +11,7 @@
         <ul><li v-for="item in items"><a :href=" item.way "><i :class=" item.icon "><!--::before--></i><span>{{ item.text }}</span></a></li></ul>
       </nav>
 
-      <!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none">
-        <i class="icofont-navigation-menu"><!--::before--></i>
-      </button>
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"><!--::before--></i></button>
     </div>
   </header>
 
@@ -27,8 +24,8 @@
         data() {
             return {
                 author: 'Alex Smith',
-                index: '../../index.html',
-                profileImg: '../../static/img/profile-img.jpg',
+                index: '../index.html',
+                profileImg: '../static/img/profile-img.jpg',
                 socials: [
                     {name: 'twitter', icon: 'bx bxl-twitter'},
                     {name: 'facebook', icon: 'bx bxl-facebook'},
@@ -37,7 +34,7 @@
                     {name: 'linkedin', icon: 'bx bxl-linkedin'}
                 ],
                 items: [
-                    {way: '../../index.html', icon: 'bx bx-home', text: 'Home'},
+                    {way: '../index.html', icon: 'bx bx-home', text: 'Home'},
                     {way: '#about', icon: 'bx bx-user', text: 'About'},
                     {way: '#resume', icon: 'bx bx-file-blank', text: 'Resume'},
                     {way: '#portfolio', icon: 'bx bx-book-content', text: 'Portfolio'},
@@ -147,6 +144,12 @@
 
   .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
     color: #149ddd;
+  }
+
+  @media (max-width: 1199px) {
+    #header {
+      left: -300px;
+    }
   }
 
 </style>
