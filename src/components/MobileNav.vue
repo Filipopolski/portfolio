@@ -1,8 +1,6 @@
 <template>
   <button type="button" class="mobile-nav-toggle d-xl-none">
-    <i class="icofont-navigation-menu">
-<!--      ::before-->
-    </i>
+    <i class="icofont-navigation-menu"><!--:before--></i>
   </button>
 </template>
 

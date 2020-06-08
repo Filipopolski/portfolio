@@ -1,85 +1,49 @@
 <template>
+
   <section id="contact" class="contact">
     <div class="container">
-
-      <div class="section-title">
-        <h2>
-          Contact
-<!--          ::after-->
-        </h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p>
-      </div>
-
+      <div class="section-title"><h2> {{ title }}<!--::after--></h2>
+        <p>{{ text }}</p></div>
       <div class="row aos-init" data-aos="fade-in">
-
         <div class="col-lg-5 d-flex align-items-stretch">
           <div class="info">
-            <div class="address">
-              <i class="icofont-google-map">
-<!--                ::before-->
-              </i>
-              <h4>Location:</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
-            </div>
-
-            <div class="email">
-              <i class="icofont-envelope">
-<!--                ::before-->
-              </i>
-              <h4>Email:</h4>
-              <p>info@example.com</p>
-            </div>
-
-            <div class="phone">
-              <i class="icofont-phone">
-<!--                ::before-->
-              </i>
-              <h4>Call:</h4>
-              <p>+1 5589 55488 55s</p>
-            </div>
-
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-              frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen=""></iframe>
+            <div v-for="contact in contacts" :class=" contact.class ">
+              <i :class=" contact.icon "><!--::before--></i><h4>{{ contact.info }}</h4>
+              <p>{{ contact.text }}</p></div>
+            <iframe :src=" address " frameborder="0" style="border:0; width: 100%; height: 290px;"
+                    allowfullscreen=""></iframe>
           </div>
-
         </div>
 
         <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form :action=" forms " method="post" role="form" class="php-email-form">
             <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="name">Your Name</label>
-                <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4"
-                       data-msg="Please enter at least 4 chars">
-                <div class="validate"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="name">Your Email</label>
-                <input type="email" class="form-control" name="email" id="email" data-rule="email"
-                       data-msg="Please enter a valid email">
+              <div v-for="formData in formsData" :class=" formData.class ">
+                <label for="name">{{ formData.data }}</label>
+                <input :type=" formData.type " class="form-control" :name=" formData.name " :id=" formData.id "
+                       :data-rule=" formData.rule " :data-msg=" formData.msg ">
                 <div class="validate"></div>
               </div>
             </div>
+
             <div class="form-group">
-              <label for="name">Subject</label>
-              <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4"
-                     data-msg="Please enter at least 8 chars of subject">
+              <label for="name">{{ subject.data }}</label>
+              <input :type=" subject.type " class="form-control" :name=" subject.name " :id=" subject.id "
+                     :data-rule=" subject.rule " :data-msg=" subject.msg ">
               <div class="validate"></div>
             </div>
+
             <div class="form-group">
-              <label for="name">Message</label>
-              <textarea class="form-control" name="message" rows="10" data-rule="required"
-                        data-msg="Please write something for us"></textarea>
+              <label for="name">{{ message.data }}</label>
+              <textarea class="form-control" :name=" message.name " :rows=" message.rows " :data-rule=" message.rule "
+                        :data-msg=" message.msg "></textarea>
               <div class="validate"></div>
             </div>
+
             <div class="mb-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div v-for="send in sendInfo" :class=" send.class ">{{ send.text }}</div>
             </div>
+
             <div class="text-center">
               <button type="submit">Send Message</button>
             </div>
@@ -90,12 +54,73 @@
 
     </div>
   </section>
+
 </template>
 
 <script>
+
     export default {
-        name: "contactSection"
+        name: "contactSection",
+        data() {
+            return {
+                title: 'Contact',
+                text: 'Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.',
+                contacts: [
+                    {
+                        class: 'address',
+                        icon: 'icofont-google-map',
+                        info: 'Location:',
+                        text: 'A108 Adam Street, New York, NY 535022'
+                    },
+                    {class: 'email', icon: 'icofont-envelope', info: 'Email:', text: 'info@example.com'},
+                    {class: 'phone', icon: 'icofont-phone', info: 'Call:', text: '+1 5589 55488 55'}
+                ],
+                address: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621',
+                forms: '../../forms/contact.php',
+                formsData: [
+                    {
+                        class: 'form-group col-md-6',
+                        data: 'Your Name',
+                        type: 'text',
+                        name: 'name',
+                        id: 'name',
+                        rule: 'minlen:4',
+                        msg: 'Please enter at least 4 chars'
+                    },
+                    {
+                        class: 'form-group col-md-6',
+                        data: 'Your Email',
+                        type: 'email',
+                        name: 'email',
+                        id: 'email',
+                        rule: 'email',
+                        msg: 'Please enter a valid email'
+                    }
+                ],
+                subject: {
+                    data: 'Subject',
+                    type: 'text',
+                    name: 'subject',
+                    id: 'subject',
+                    rule: 'minlen:4',
+                    msg: 'Please enter at least 8 chars of subject'
+                },
+                message: {
+                    data: 'Message',
+                    name: 'message',
+                    rows: 10,
+                    rule: 'required',
+                    msg: 'Please write something for us'
+                },
+                sendInfo: [
+                    {class: 'loading', text: 'Loading'},
+                    {class: 'error-message'},
+                    {class: 'sent-message', text: 'Your message has been sent. Thank you!'}
+                ]
+            }
+        }
     }
+
 </script>
 
 <style scoped>

@@ -2,77 +2,13 @@
   <section id="services" class="services">
     <div class="container">
 
-      <div class="section-title">
-        <h2>
-          Services
-          <!--          ::after-->
-        </h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p>
-      </div>
+      <div class="section-title"><h2>{{ title }}<!--::after--></h2><p>{{ text }}</p></div>
 
       <div class="row">
-        <div class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up">
-          <div class="icon">
-            <i class="icofont-computer">
-              <!--              ::before-->
-            </i>
-          </div>
-          <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-            occaecati cupiditate non provident</p>
-        </div>
-        <div class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up" data-aos-delay="100">
-          <div class="icon">
-            <i class="icofont-chart-bar-graph">
-              <!--              ::before-->
-            </i>
-          </div>
-          <h4 class="title"><a href="">Dolor Sitema</a></h4>
-          <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat tarad limino ata</p>
-        </div>
-        <div class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up" data-aos-delay="200">
-          <div class="icon">
-            <i class="icofont-earth">
-              <!--              ::before-->
-            </i>
-          </div>
-          <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur</p>
-        </div>
-        <div class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up" data-aos-delay="300">
-          <div class="icon">
-            <i class="icofont-image">
-              <!--              ::before-->
-            </i>
-          </div>
-          <h4 class="title"><a href="">Magni Dolores</a></h4>
-          <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum</p>
-        </div>
-        <div class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up" data-aos-delay="400">
-          <div class="icon">
-            <i class="icofont-settings">
-              <!--              ::before-->
-            </i>
-          </div>
-          <h4 class="title"><a href="">Nemo Enim</a></h4>
-          <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-            voluptatum deleniti atque</p>
-        </div>
-        <div class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up" data-aos-delay="500">
-          <div class="icon">
-            <i class="icofont-tasks-alt">
-              <!--              ::before-->
-            </i>
-          </div>
-          <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-          <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-            soluta nobis est eligendi</p>
-        </div>
+        <div v-for="service in services" class="col-lg-4 col-md-6 icon-box aos-init" data-aos="fade-up" :data-aos-delay=" service.data ">
+          <div class="icon"><i :class=" service.icon "><!--::before--></i></div>
+          <h4 class="title"><a href="">{{ service.title }}</a></h4>
+          <p class="description">{{ service.description}}</p></div>
       </div>
 
     </div>
@@ -81,7 +17,21 @@
 
 <script>
     export default {
-        name: "ServicesSection"
+        name: "ServicesSection",
+        data () {
+            return {
+                title: 'Services',
+                text: 'Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.',
+                services: [
+                    {icon: 'icofont-computer', title: 'Lorem Ipsum', description: 'Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident'},
+                    {data: '100', icon: 'icofont-chart-bar-graph', title: 'Dolor Sitema', description: 'Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata'},
+                    {data: '200', icon: 'icofont-earth', title: 'Sed ut perspiciatis', description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur'},
+                    {data: '300', icon: 'icofont-image', title: 'Magni Dolores', description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'},
+                    {data: '400', icon: 'icofont-settings', title: 'Nemo Enim', description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque'},
+                    {data: '500', icon: 'icofont-tasks-alt', title: 'Eiusmod Tempor', description: 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi'},
+                ]
+            }
+        }
     }
 </script>
 

@@ -2,66 +2,48 @@
 
   <header id="header">
     <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="../assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="../../index.html">{{title}}</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a  v-for="social in socials" href="#" class= "{ social.a }">
-            <i class="bx bxl-{ social.icon }">
-              <!--              ::before-->
-            </i>
-          </a>
+      <div class="profile"><img :src=" profileImg " alt="" class="img-fluid rounded-circle"><h1 class="text-light"><a :href=" index ">{{ author }}</a></h1>
+        <div class="social-links mt-3 text-center"><a v-for="social in socials" href="#" :class=" social.name "><i :class=" social.icon "><!--::before--></i></a>
         </div>
       </div>
 
       <nav class="nav-menu">
-        <ul>
-          <li v-for="item in items">
-         <a href="{item.way}">
-              <i class="bx bx-{item.icon}">
-                <!--                ::before-->
-              </i>
-              <span>{{item.text}}</span>
-            </a>
-          </li>
-
-        </ul>
+        <ul><li v-for="item in items"><a :href=" item.way "><i :class=" item.icon "><!--::before--></i><span>{{ item.text }}</span></a></li></ul>
       </nav>
 
       <!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none">
-        <i class="icofont-navigation-menu">
-          <!--          ::before-->
-        </i>
+        <i class="icofont-navigation-menu"><!--::before--></i>
       </button>
     </div>
   </header>
 
 </template>
 
-
 <script>
-  
+
     export default {
         name: "Header",
         data() {
             return {
-                title: 'Alex Smith',
+                author: 'Alex Smith',
+                index: '../../index.html',
+                profileImg: '../../static/img/profile-img.jpg',
                 socials: [
-                    {a: 'twitter', icon: 'twitter'},
-                    {a: 'facebook', icon: 'facebook'},
-                    {a: 'instagram', icon: 'instagram'},
-                    {a: 'google-plus', icon: 'skype'},
-                    {a: 'linkedin', icon: 'linkedin'}
+                    {name: 'twitter', icon: 'bx bxl-twitter'},
+                    {name: 'facebook', icon: 'bx bxl-facebook'},
+                    {name: 'instagram', icon: 'bx bxl-instagram'},
+                    {name: 'google-plus', icon: 'bx bxl-skype'},
+                    {name: 'linkedin', icon: 'bx bxl-linkedin'}
                 ],
                 items: [
-                    {way: '../../index.html', icon: 'home', text: 'Home'},
-                    {way: '#about', icon: 'user', text: 'About'},
-                    {way: '#resume', icon: 'file-blank', text: 'Resume'},
-                    {way: '#portfolio', icon: 'book-content', text: 'Portfolio'},
-                    {way: '#services', icon: 'server', text: 'Services'},
-                    {way: '#contact', icon: 'envelope', text: 'Contact'}
-                ]
+                    {way: '../../index.html', icon: 'bx bx-home', text: 'Home'},
+                    {way: '#about', icon: 'bx bx-user', text: 'About'},
+                    {way: '#resume', icon: 'bx bx-file-blank', text: 'Resume'},
+                    {way: '#portfolio', icon: 'bx bx-book-content', text: 'Portfolio'},
+                    {way: '#services', icon: 'bx bx-server', text: 'Services'},
+                    {way: '#contact', icon: 'bx bx-envelope', text: 'Contact'}
+                ],
             }
         }
     }

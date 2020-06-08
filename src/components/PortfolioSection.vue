@@ -1,213 +1,34 @@
 <template>
+
   <section id="portfolio" class="portfolio section-bg">
     <div class="container">
 
       <div class="section-title">
-        <h2>
-          Portfolio
-<!--          ::after-->
-        </h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.</p>
-      </div>
+        <h2>{{ title }}<!--::after--></h2><p>{{ text }}</p></div>
 
       <div class="row aos-init" data-aos="fade-up">
         <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
-          </ul>
+          <ul id="portfolio-flters"><li v-for="filter in portfolioFilters" :data-filter=" filter.data " :class=" filter.class ">{{ filter.name }}</li></ul>
         </div>
       </div>
 
-      <div class="row portfolio-container aos-init" data-aos="fade-up" data-aos-delay="100"
-           style="position: relative; height: 3712.5px;">
+      <div class="row portfolio-container aos-init" data-aos="fade-up" data-aos-delay="100" style="position: relative; height: 3712.5px;">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-          <div class="portfolio-wrap">
-<!--            ::before-->
-            <img src="../assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+        <div v-for="item in portfolioItems" :class=" item.class " :style=" item.style ">
+          <div class="portfolio-wrap"><!--::before--><img :src=" item.src " class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="../assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
-                 title="App 1">
-                <i class="bx bx-plus">
-<!--                  ::before-->
-                </i>
-              </a>
+              <a :href=" item.src " data-gall="portfolioGallery" class="venobox vbox-item" :title=" item.title ">
+                <i class="bx bx-plus"><!--::before--></i></a>
               <a href="portfolio-details.html" title="More Details">
-                <i class="bx bx-link">
-<!--                  ::before-->
-                </i>
-              </a>
+                <i class="bx bx-link"><!--::before--></i></a>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="position: absolute; left: 0px; top: 412.5px;">
-          <div class="portfolio-wrap">
-<!--            ::before-->
-            <img src="../assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="../assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
-                 title="Web 3">
-                <i class="bx bx-plus">
-<!--                  ::before-->
-                </i>
-              </a>
-              <a href="portfolio-details.html" title="More Details">
-                <i class="bx bx-link">
-<!--                  ::before-->
-                </i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 825px;">
-          <div class="portfolio-wrap">
-<!--            ::before-->
-            <img src="../assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="../assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
-                 title="App 2">
-                <i class="bx bx-plus">
-<!--                  ::before-->
-                </i>
-              </a>
-              <a href="portfolio-details.html" title="More Details">
-                <i class="bx bx-link">
-<!--                  ::before-->
-                </i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card" style="position: absolute; left: 0px; top: 1237.5px;">
-          <div class="portfolio-wrap">
-<!--            ::before-->
-            <img src="../assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="../assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
-                 title="Card 2">
-                <i class="bx bx-plus">
-<!--                  ::before-->
-                </i></a>
-              <a href="portfolio-details.html" title="More Details">
-                <i class="bx bx-link">
-<!--                  ::before-->
-                </i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="position: absolute; left: 0px; top: 1650px;">
-          <div class="portfolio-wrap">
-<!--            ::before-->
-            <img src="../assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="../assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
-                 title="Web 2">
-                <i class="bx bx-plus">
-<!--                  ::before-->
-                </i>
-              </a>
-              <a href="portfolio-details.html" title="More Details">
-                <i class="bx bx-link">
-<!--                  ::before-->
-                </i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 2062.5px;">
-          <div class="portfolio-wrap">
-<!--            ::before-->
-            <img src="../assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="../assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
-                 title="App 3">
-                <i class="bx bx-plus">
-<!--                  ::before-->
-                </i>
-              </a>
-              <a href="portfolio-details.html" title="More Details">
-                <i class="bx bx-link">
-<!--                  ::before-->
-                </i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card" style="position: absolute; left: 0px; top: 2475px;">
-          <div class="portfolio-wrap">
-<!--            ::before-->
-            <img src="../assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="../assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
-                 title="Card 1">
-                <i class="bx bx-plus">
-<!--                  ::before-->
-                </i>
-              </a>
-              <a href="portfolio-details.html" title="More Details">
-                <i class="bx bx-link">
-<!--                  ::before-->
-                </i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card" style="position: absolute; left: 0px; top: 2887.5px;">
-          <div class="portfolio-wrap">
-<!--            ::before-->
-            <img src="../assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="../assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
-                 title="Card 3">
-                <i class="bx bx-plus">
-<!--                  ::before-->
-                </i>
-              </a>
-              <a href="portfolio-details.html" title="More Details">
-                <i class="bx bx-link">
-<!--                  ::before-->
-                </i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web" style="position: absolute; left: 0px; top: 3300px;">
-          <div class="portfolio-wrap">
-<!--            ::before-->
-            <img src="../assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="../assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox vbox-item"
-                 title="Web 3">
-                <i class="bx bx-plus">
-<!--                  ::before-->
-                </i>
-              </a>
-              <a href="portfolio-details.html" title="More Details">
-                <i class="bx bx-link">
-<!--                  ::before-->
-                </i>
-              </a>
-            </div>
-          </div>
-        </div>
-
       </div>
 
     </div>
   </section>
+
 </template>
 
 <script>
@@ -216,7 +37,31 @@
     // import $ from 'jquery';
 
     export default {
+
         name: "PortfolioSection",
+        data () {
+          return {
+              title: 'Portfolio',
+              text: 'Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.',
+              portfolioFilters: [
+                  {data: '*', class: 'filter-active', name: 'All'},
+                  {data: '.filter-app', name: 'App'},
+                  {data: '.filter-card', name: 'Card'},
+                  {data: '.filter-web',name: 'Web'},
+              ],
+              portfolioItems: [
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-app', style: 'position: absolute; left: 0px; top: 0px', src: '../../static/img/portfolio/portfolio-1.jpg', title: 'App 1'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-web', style: 'position: absolute; left: 0px; top: 412.5px', src: '../../static/img/portfolio/portfolio-2.jpg', title: 'Web 3'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-app', style: 'position: absolute; left: 0px; top: 825px', src: '../../static/img/portfolio/portfolio-3.jpg', title: 'App 2'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-card', style: 'position: absolute; left: 0px; top: 1237.5px', src: '../../static/img/portfolio/portfolio-4.jpg', title: 'Card 2'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-web', style: 'position: absolute; left: 0px; top: 1650px', src: '../../static/img/portfolio/portfolio-5.jpg', title: 'Web 2'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-app', style: 'position: absolute; left: 0px; top: 2062.5px', src: '../../static/img/portfolio/portfolio-6.jpg', title: 'App 3'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-card', style: 'position: absolute; left: 0px; top: 2475px', src: '../../static/img/portfolio/portfolio-7.jpg', title: 'Card 1'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-card', style: 'position: absolute; left: 0px; top: 2887.5px', src: '../../static/img/portfolio/portfolio-8.jpg', title: 'Card 3'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-web', style: 'position: absolute; left: 0px; top: 3300px', src: '../../static/img/portfolio/portfolio-9.jpg', title: 'Web 3'},
+              ],
+          }
+        },
             components: {
                 isotope,
             },
@@ -224,6 +69,7 @@
         //     $('.venobox').venobox();
         // }
     }
+
 </script>
 
 <style scoped>

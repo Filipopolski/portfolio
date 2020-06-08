@@ -1,74 +1,61 @@
 <template>
+
   <section id="facts" class="facts">
     <div class="container">
-
-      <div class="section-title">
-        <h2>
-          Facts
-<!--          ::after-->
-        </h2>
-        <p>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-          in iste officiis commodi quidem hic quas.
-        </p>
-      </div>
+      <div class="section-title"><h2>{{ title }}<!--::after--></h2>
+        <p>{{ text }}</p></div>
 
       <div class="row no-gutters">
-
-        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch aos-init aos-animate" data-aos="fade-up">
-          <div class="count-box">
-            <i class="icofont-simple-smile">
-<!--              ::before-->
-            </i>
-            <span data-toggle="counter-up">232</span>
-            <p><strong>Happy Clients</strong> consequuntur quae</p>
-          </div>
+        <div v-for="fact in facts" class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch aos-init aos-animate"
+             data-aos="fade-up" :data-aos-delay=" fact.delay ">
+          <div class="count-box"><i :class=" fact.icon "><!--::before--></i><span data-toggle="counter-up">{{ fact.number }}</span>
+            <p><strong>{{ fact.job }}</strong> {{ fact.about }}</p></div>
         </div>
-
-        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch aos-init aos-animate" data-aos="fade-up"
-             data-aos-delay="100">
-          <div class="count-box">
-            <i class="icofont-document-folder">
-<!--              ::before-->
-            </i>
-            <span data-toggle="counter-up">521</span>
-            <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch aos-init aos-animate" data-aos="fade-up"
-             data-aos-delay="200">
-          <div class="count-box">
-            <i class="icofont-live-support">
-<!--              ::before-->
-            </i>
-            <span data-toggle="counter-up">1,463</span>
-            <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch aos-init aos-animate" data-aos="fade-up"
-             data-aos-delay="300">
-          <div class="count-box">
-            <i class="icofont-users-alt-5">
-<!--              ::before-->
-            </i>
-            <span data-toggle="counter-up">15</span>
-            <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-          </div>
-        </div>
-
       </div>
-
     </div>
   </section>
+
 </template>
 
 <script>
 
     export default {
-        name: "FactsSection"
+        name: "FactsSection",
+        data() {
+            return {
+                title: 'Facts',
+                text: 'Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.',
+                facts: [
+                    {
+                        icon: 'icofont-simple-smile',
+                        number: '232',
+                        job: 'Happy Clients',
+                        about: ' consequuntur quae'
+                    },
+                    {
+                        delay: '100',
+                        icon: 'icofont-document-folder',
+                        number: '521',
+                        job: 'Projects',
+                        about: ' adipisci atque cum quia aut'
+                    },
+                    {
+                        delay: '200',
+                        icon: 'icofont-live-support',
+                        number: '1,463',
+                        job: 'Hours Of Support',
+                        about: ' aut commodi quaerat'
+                    },
+                    {
+                        delay: '300',
+                        icon: 'icofont-users-alt-5',
+                        number: '15',
+                        job: 'Hard Workers',
+                        about: ' rerum asperiores dolor'
+                    }
+                ]
+            }
+        }
     }
 
 </script>

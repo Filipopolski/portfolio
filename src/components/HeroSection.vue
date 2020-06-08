@@ -2,9 +2,9 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
 <!--    ::before-->
     <div class="hero-container aos-init aos-animate" data-aos="fade-in">
-      <h1>Alex Smith</h1>
+      <h1>{{author}}</h1>
       <p>
-        "I'm"
+        I'm
         <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Developer</span>
         <span class="typed-cursor typed-cursor--blink">|</span>
       </p>
@@ -14,7 +14,12 @@
 
 <script>
     export default {
-        name: "HeroSection"
+        name: "HeroSection",
+        data () {
+            return {
+                author: 'Alex Smith'
+            }
+        }
     }
 </script>
 
@@ -23,7 +28,7 @@
   #hero {
     width: 100%;
     height: 100vh;
-    background: url("../assets/img/hero-bg.jpg") top center;
+    background: url("../../static/img/hero-bg.jpg") top center;
     background-size: cover;
   }
 
@@ -84,7 +89,7 @@
     }
   }
 
-  .typed-cursor{
+  .vue-typed-cursor{
     opacity: 1;
   }
 
