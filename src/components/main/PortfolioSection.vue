@@ -19,7 +19,7 @@
             <div class="portfolio-links">
               <a :href=" item.src " data-gall="portfolioGallery" class="venobox vbox-item" :title=" item.title ">
                 <i class="bx bx-plus"><!--::before--></i></a>
-              <a href="portfolio-details.html" title="More Details">
+              <a :href=" href.link " :title=" href.title ">
                 <i class="bx bx-link"><!--::before--></i></a>
             </div>
           </div>
@@ -33,7 +33,7 @@
 
 <script>
 
-    import isotope from 'vueisotope'
+    // import isotope from 'vueisotope'
     // import $ from 'jquery';
 
     export default {
@@ -47,10 +47,10 @@
                   {data: '*', class: 'filter-active', name: 'All'},
                   {data: '.filter-app', name: 'App'},
                   {data: '.filter-card', name: 'Card'},
-                  {data: '.filter-web',name: 'Web'},
+                  {data: '.filter-web', name: 'Web'},
               ],
               portfolioItems: [
-                  {class: 'col-lg-4 col-md-6 portfolio-item filter-app', style: 'position: absolute; left: 0px; top: 0px', src: '../static/img/portfolio/portfolio-1.jpg', title: 'App 1'},
+                  {class: 'col-lg-4 col-md-6 portfolio-item filter-app', style: 'position: absolute; left: 0px; top: 0px', src: '../static/img/portfolio/portfolio-1.jpg', title: 'App 1',},
                   {class: 'col-lg-4 col-md-6 portfolio-item filter-web', style: 'position: absolute; left: 380px; top: 0px', src: '../static/img/portfolio/portfolio-2.jpg', title: 'Web 3'},
                   {class: 'col-lg-4 col-md-6 portfolio-item filter-app', style: 'position: absolute; left: 760px; top: 0px', src: '../static/img/portfolio/portfolio-3.jpg', title: 'App 2'},
                   {class: 'col-lg-4 col-md-6 portfolio-item filter-card', style: 'position: absolute; left: 0px; top: 292.5px', src: '../static/img/portfolio/portfolio-4.jpg', title: 'Card 2'},
@@ -60,15 +60,41 @@
                   {class: 'col-lg-4 col-md-6 portfolio-item filter-card', style: 'position: absolute; left: 380px; top: 585px', src: '../static/img/portfolio/portfolio-8.jpg', title: 'Card 3'},
                   {class: 'col-lg-4 col-md-6 portfolio-item filter-web', style: 'position: absolute; left: 760px; top: 585px', src: '../static/img/portfolio/portfolio-9.jpg', title: 'Web 3'},
               ],
+              href: {link: '../../../portfolio-details.html', title: 'More Details'}
           }
         },
-            components: {
-                isotope,
-            },
+        // components: {
+        //     isotope,
+        // },
+        // methods: {
+        //
+        // }
         // mounted () {
         //     $('.venobox').venobox();
         // }
     }
+
+    // $(window).on('load', function() {
+    //     var portfolioIsotope = $('.portfolio-container').isotope({
+    //         itemSelector: '.portfolio-item',
+    //         layoutMode: 'fitRows'
+    //     });
+    //
+    //     $('#portfolio-flters li').on('click', function() {
+    //         $("#portfolio-flters li").removeClass('filter-active');
+    //         $(this).addClass('filter-active');
+    //
+    //         portfolioIsotope.isotope({
+    //             filter: $(this).data('filter')
+    //         });
+    //     });
+    //
+    //     // Initiate venobox (lightbox feature used in portofilo)
+    //     $(document).ready(function() {
+    //         $('.venobox').venobox();
+    //     });
+    // });
+
 
 </script>
 

@@ -14,6 +14,7 @@ import VueForm from 'vue-form'
 import VueTypedJs from 'vue-typed-js'
 import 'boxicons';
 import VueWaypoint from 'vue-waypoint'
+// import $ from 'jquery';
 
 
 /* font-class */
