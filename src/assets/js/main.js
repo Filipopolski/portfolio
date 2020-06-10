@@ -157,7 +157,7 @@
   });
 
   // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
+  $(".portfolio-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,

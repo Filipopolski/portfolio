@@ -1,21 +1,31 @@
 <template>
+
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    ::before
-    <div class="hero-container aos-init aos-animate" data-aos="fade-in">
-      <h1>Alex Smith</h1>
+    <!--    ::before-->
+    <div class="hero-container" data-aos="fade-in">
+      <h1>{{author}}</h1>
       <p>
-        "I'm"
-        <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Developer</span>
-        <span class="typed-cursor typed-cursor--blink">|</span>
+        <vue-typed-js class="typed" :strings="['Designer', 'Developer', 'Freelancer', 'Photographer']" :loop="true" :typeSpeed="100" :backSpeed="50" :backDelay="2000">
+          <h3>I'm <span class="typing"></span></h3>
+        </vue-typed-js>
       </p>
     </div>
+
   </section>
+
 </template>
 
 <script>
+
     export default {
-        name: "Hero-section"
+        name: "HeroSection",
+        data() {
+            return {
+                author: 'Alex Smith'
+            }
+        },
     }
+
 </script>
 
 <style scoped>
@@ -23,7 +33,7 @@
   #hero {
     width: 100%;
     height: 100vh;
-    /*background: url("../img/hero-bg.jpg") top center;*/
+    background: url("../../../static/img/hero-bg.jpg") top center;
     background-size: cover;
   }
 
@@ -77,6 +87,7 @@
       font-size: 28px;
       line-height: 36px;
     }
+
     #hero h2 {
       font-size: 18px;
       line-height: 24px;

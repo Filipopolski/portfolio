@@ -2,15 +2,25 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
-// require('./assets/css/style.css');
+import Portfolio from "./Portfolio"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
+import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm'
 // Import the styles directly. (Or you could add them via script tags.)
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
-import VueIconFont from 'vue-icon-font'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VueIconFont from 'vue-icon-font' // nu trebuie
+import VueForm from 'vue-form'
+import VueTypedJs from 'vue-typed-js'
+import VueWaypoint from 'vue-waypoint'
+import 'boxicons'
+import '@icon/icofont/icofont.css'
+
+window.$ = window.jQuery = require('jquery');
+require('venobox/venobox/venobox');
+window.Vue = require('vue');
+
+
 
 /* font-class */
 // import '@/assets/iconfont/iconfont.css'
@@ -18,10 +28,17 @@ import VueIconFont from 'vue-icon-font'
 /* symbol,svg */
 // import '@/assets/iconfont/iconfont.js'
 
+import router from './router'
 
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 Vue.use(VueIconFont);
+Vue.use(VueForm);
+Vue.use(VueTypedJs);
+Vue.use(VueWaypoint);
+Vue.use(require('vue-countup'));
+
+
 
 /* eslint-disable no-new */
 new Vue({
@@ -29,6 +46,13 @@ new Vue({
   router,
   components: { App },
   template: '<App/>',
+});
+
+new Vue({
+  el: '#portfolio',
+  router,
+  components: { Portfolio },
+  template: '<Portfolio/>'
 });
 
 new Vue({
@@ -40,6 +64,17 @@ new Vue({
 });
 
 new Vue({
+  el: '#portfolio',
+  created () {
+    AOS.init()
+  },
+  render: h => h(Portfolio)
+});
+
+new Vue({
   el: '#app',
   render: h => h(App)
 });
+
+
+
