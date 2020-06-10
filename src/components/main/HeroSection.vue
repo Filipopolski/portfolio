@@ -1,41 +1,30 @@
 <template>
+
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-<!--    ::before-->
-    <div class="hero-container aos-init aos-animate" data-aos="fade-in">
+    <!--    ::before-->
+    <div class="hero-container" data-aos="fade-in">
       <h1>{{author}}</h1>
       <p>
-        I'm
-        <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Developer</span>
-        <span class="typed-cursor typed-cursor--blink">|</span>
+        <vue-typed-js class="typed" :strings="['Designer', 'Developer', 'Freelancer', 'Photographer']" :loop="true" :typeSpeed="100" :backSpeed="50" :backDelay="2000">
+          <h3>I'm <span class="typing"></span></h3>
+        </vue-typed-js>
       </p>
     </div>
+
   </section>
+
 </template>
 
 <script>
 
-    // import $ from 'jquery';
-
     export default {
         name: "HeroSection",
-        data () {
+        data() {
             return {
                 author: 'Alex Smith'
             }
         },
     }
-
-    // if ($('.typed').length) {
-    //     let typed_strings = $(".typed").data('typed-items');
-    //     typed_strings = typed_strings.split(',');
-    //     new Typed('.typed', {
-    //         strings: typed_strings,
-    //         loop: true,
-    //         typeSpeed: 100,
-    //         backSpeed: 50,
-    //         backDelay: 2000
-    //     });
-    // }
 
 </script>
 
@@ -98,31 +87,12 @@
       font-size: 28px;
       line-height: 36px;
     }
+
     #hero h2 {
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 30px;
     }
-  }
-
-  .typed-cursor{
-    opacity: 1;
-  }
-
-  .typed-cursor.typed-cursor--blink{
-    animation: typedjsBlink 0.7s infinite;
-    -webkit-animation: typedjsBlink 0.7s infinite;
-    animation: typedjsBlink 0.7s infinite;
-  }
-
-  @keyframes typedjsBlink{
-    50% { opacity: 0.0; }
-  }
-
-  @-webkit-keyframes typedjsBlink{
-    0% { opacity: 1; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1; }
   }
 
 </style>

@@ -33,8 +33,8 @@
 
 <script>
 
-    // import isotope from 'vueisotope'
-    // import $ from 'jquery';
+    import isotope from 'vueisotope'
+    import $ from 'jquery';
 
     export default {
 
@@ -63,15 +63,17 @@
               href: {link: '../../../portfolio-details.html', title: 'More Details'}
           }
         },
-        // components: {
-        //     isotope,
-        // },
+        components: {
+            isotope,
+        },
         // methods: {
         //
         // }
         // mounted () {
-        //     $('.venobox').venobox();
-        // }
+    //         $(document).ready(function() {
+    //     $('.venobox').venobox();
+    // });
+    //     }
     }
 
     // $(window).on('load', function() {
@@ -88,11 +90,10 @@
     //             filter: $(this).data('filter')
     //         });
     //     });
+    // });
     //
-    //     // Initiate venobox (lightbox feature used in portofilo)
-    //     $(document).ready(function() {
-    //         $('.venobox').venobox();
-    //     });
+    // $(document).ready(function() {
+    //     $('.venobox').venobox();
     // });
 
 

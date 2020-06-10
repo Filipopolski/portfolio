@@ -7,7 +7,7 @@
 
       <div class="row skills-content">
 
-        <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+        <div class="col-lg-6" data-aos="fade-up">
           <div class="progress" v-for="skillOne in skillsOne"><span class="skill">{{ skillOne.skill }}<i class="val">{{ skillOne.progress }}</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" :aria-valuenow=" skillOne.valuenow "
@@ -17,7 +17,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
           <div class="progress" v-for="skillTwo in skillsTwo"><span class="skill">{{ skillTwo.skill }}<i class="val">{{ skillTwo.progress }}</i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" :aria-valuenow=" skillTwo.valuenow "

@@ -1,6 +1,8 @@
 <template>
 
-  <a href="#" class="back-to-top" style="display: none;"><i class="icofont-simple-up"><!--:before--></i></a>
+  <a href="#" class="back-to-top" style="display: inline;"><i class="icofont-simple-up"><!--:before--></i></a>
+
+  <!--  <a href="#" class="back-to-top" style="display: inline;"><box-icon name='chevron-up-circle' color="white">&lt;!&ndash;:before&ndash;&gt;</box-icon></a>-->
 
 </template>
 

@@ -9,12 +9,17 @@ import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm'
 // Import the styles directly. (Or you could add them via script tags.)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import VueIconFont from 'vue-icon-font'
+import VueIconFont from 'vue-icon-font' // nu trebuie
 import VueForm from 'vue-form'
 import VueTypedJs from 'vue-typed-js'
-import 'boxicons';
 import VueWaypoint from 'vue-waypoint'
-// import $ from 'jquery';
+import 'boxicons'
+import '@icon/icofont/icofont.css'
+
+window.$ = window.jQuery = require('jquery');
+require('venobox/venobox/venobox');
+window.Vue = require('vue');
+
 
 
 /* font-class */
@@ -70,5 +75,6 @@ new Vue({
   el: '#app',
   render: h => h(App)
 });
+
 
 

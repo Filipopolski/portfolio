@@ -12,8 +12,8 @@
 
             <div v-for="testimonial in testimonials" :class=" testimonial.class " style="width: 510px;">
               <div class="testimonial-item aos-init" data-aos="fade-up" :data-aos-delay=" testimonial.data ">
-                <p><i class="bx bxs-quote-alt-left quote-icon-left"><!--::before--></i> {{ testimonial.text }}
-                  <i class="bx bxs-quote-alt-right quote-icon-right"><!--::before--></i><!--::after--></p>
+                <p><box-icon class="quote-left" name="quote-alt-left" type="solid" color="#c3e8fa" ><!--::before--></box-icon> {{ testimonial.text }}
+                  <box-icon class="quote-right" type="solid" name="quote-alt-right" color="#c3e8fa"><!--::before--></box-icon><!--::after--></p>
                 <img :src=" testimonial.src " class="testimonial-img" alt="">
                 <h3>{{ testimonial.name }}</h3><h4>{{ testimonial.job }}</h4></div>
             </div>
@@ -39,6 +39,10 @@
 <script>
 
     import carousel from 'vue-owl-carousel'
+    // import $ from 'jquery'
+    // import $ from 'vue-jquery'
+    // import jQuery from 'jQuery'
+    // window.jQuery = jQuery;
 
     export default {
         name: "TestimonialsSection",
@@ -145,8 +149,28 @@
                 ]
             }
         },
-        components: {carousel}
+        components: {carousel},
+        // mounted() {
+        //     $(".testimonials-carousel").owlCarousel({
+        //         autoplay: true,
+        //         dots: true,
+        //         loop: true,
+        //         responsive: {
+        //             0: {
+        //                 items: 1
+        //             },
+        //             768: {
+        //                 items: 2
+        //             },
+        //             900: {
+        //                 items: 3
+        //             }
+        //         }
+        //     });
+        // }
     }
+
+
 
 </script>
 
@@ -177,18 +201,18 @@
     margin: 0;
   }
 
-  .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+  .testimonials .testimonial-item .quote-left, .testimonials .testimonial-item .quote-right {
     color: #c3e8fa;
     font-size: 26px;
   }
 
-  .testimonials .testimonial-item .quote-icon-left {
+  .testimonials .testimonial-item .quote-left {
     display: inline-block;
     left: -5px;
     position: relative;
   }
 
-  .testimonials .testimonial-item .quote-icon-right {
+  .testimonials .testimonial-item .quote-right {
     display: inline-block;
     right: -5px;
     position: relative;
